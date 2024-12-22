@@ -1,0 +1,33 @@
+.container-forms-login {
+    background-color: #4F86C6;
+    width: 500px;
+    margin-top: 100px;
+}
+
+.container-caixa {
+    display: flex;
+    justify-content: center;
+}
+
+.container-cad {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.container-cad > a {
+    color: #e3e3ff;
+}
+
+.container-cad > a:hover {
+    color: #0b3f7a;
+}
+
+.recup-senha {
+    color: #e3e3ff;
+}
+
+.recup-senha:hover {
+    color: #0b3f7a;
+}

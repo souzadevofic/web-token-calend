@@ -1,0 +1,131 @@
+.container-title-card > h1 {
+    display: flex;
+    align-items: center;
+    margin-top: 60px;
+    justify-content: center;
+    font-size: 30px;
+}
+
+.container-collection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem; 
+    margin: 2rem 0 0;
+    cursor: pointer;
+}
+
+.container-collectionz h3 {
+    margin: 1rem 5rem 0 1.5rem;
+    font-size: 2rem;
+}
+
+.container-collection h3 {
+    margin: 1rem 8rem 0 1.5rem;
+    font-size: 2.5rem;
+}
+
+.collection-1 {
+    background-image: url('../../../public/reuniao-brainstorming.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 405px;
+    height: 250px;
+    border-radius: 0.5rem;
+    transition: 0.4s;
+
+}
+
+.collection-1 > .title-card {
+    color: #ffffff;
+}
+
+.collection-1:hover {
+    transform: scale(1.07);
+}
+
+.collection-2 {
+    background-image: url('../../../public/sesc-sumit.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 405px;
+    height: 251px;
+    border-radius: 0.5rem;
+    transition: 0.4s;
+}
+.collection-2 > .title-card {
+    color: #ffffff;
+}
+.collection-2:hover {
+    transform: scale(1.07);
+}
+
+.collection-3 {
+    background-image: url('../../../public/festa-fim-de-ano.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 405px;
+    height: 251px;
+    border-radius: 0.5rem;
+    transition: 0.4s;
+}
+
+.collection-3 > .title-card {
+    color: #ffffff;
+}
+
+.collection-3:hover {
+    transform: scale(1.07);
+}
+
+.date {
+    background-color: #ffffff;
+    width: 130px;
+    height: 45px;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 29px;
+    margin-left: 1.8rem;
+    margin-top: 1rem;
+    font-weight: 500;
+}
+
+.date > span {
+    width: 90px;
+    text-align: center;
+    font-weight: 800;
+}
+
+@media (max-width: 768px) {
+    .container-collection {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .collection-1, .collection-2, .collection-3 {
+        width: 300px;
+        height: 200px;
+    }
+
+    .container-collection h3 {
+        font-size: 1.5rem;
+    }
+
+    .date {
+        background-color: #ffffff;
+        width: 120px;
+        height: 40px;
+        font-size: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 29px;
+        margin-left: 1.8rem;
+        margin-top: 1rem;
+        font-weight: 500;
+    }
+
+
+}

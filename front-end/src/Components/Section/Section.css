@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.title-calend > h2{
+    display: flex;
+    align-items: center;
+    margin-top: 60px;
+    justify-content: center;
+    font-size: 30px;
+}
+
+.title-calend  > span {
+  font-size: 15px;
+  color: #2375d3;
+
+}
+
+.wrapper{
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  background: #d1ddeb;
+  margin-top: 20px;
+  border-radius: 10px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.12);
+}
+
+.container-calendario-marca {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  justify-content: center;
+}
+
+.wrapper section{
+  display: flex;
+  align-items: center;
+  padding: 25px 30px 10px;
+  justify-content: space-between;
+}
+
+section .icons{
+  display: flex;
+}
+
+section .icons span{
+  height: 38px;
+  width: 38px;
+  margin: 0 1px;
+  cursor: pointer;
+  color: #878787;
+  text-align: center;
+  line-height: 38px;
+  font-size: 1.9rem;
+  user-select: none;
+  border-radius: 50%;
+}
+
+.icons span:last-child{
+  margin-right: -10px;
+}
+
+section .icons span:hover{
+  background: #0b3f7a;
+}
+
+section .current-date{
+  font-size: 1.45rem;
+  font-weight: 500;
+}
+
+.calendar{
+  padding: 20px;
+}
+
+/* dia calend */
+
+.calendar ul{
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  
+}
+
+.calendar .days{
+  margin-bottom: 20px;
+}
+
+.calendar li{
+  color: #333;
+  width: calc(100% / 7);
+  font-size: 1.07rem;
+}
+
+.calendar .weeks li{
+  font-weight: 500;
+  cursor: default;
+}
+
+.calendar .days li{
+  z-index: 1;
+  cursor: pointer;
+  position: relative;
+  margin-top: 30px;
+
+}
+
+.days li.inactive{
+  color: #aaa;
+}
+
+.days li.active{
+  color: #fff;
+}
+
+/* marca azul no dia */
+.days li::before{
+  position: absolute;
+  content: "";
+  left: 20%; 
+  top: 50%;
+  height: 40px;
+  width: 40px;
+  z-index: -1;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.days li.active::before{
+  background: #0b3f7a;
+}
+
+.days li:not(.active):hover::before{
+  background: #ffffff;
+}
+
+/* ---------------------------------- */
+.templete-event > h3  {
+  text-align: center;
+  color: #2375d3;
+} 
+.templete-event > p  {
+  text-align: center;
+} 
+
+.templete-event {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.templete-event > h2 {
+  font-size: medium;
+} 
+
+.templete-event > .horario {
+  color: #fff;
+  width: 120px;
+  height: 30px;
+  background-color: #2375d3;
+  text-align: center;
+  border-radius: 20px;
+  border: none;
+  margin: 0 ;
+  margin-top: -10px;
+  outline: none;
+}
+
+.templete-event > .name-event {
+  outline: none;
+  color: #ffffff;
+  max-width: 100%;
+  height: 30px;
+  background-color: #2375d3;
+  border-radius: 8px;
+  border: none;
+  margin: 0 ;
+  margin-top: -10px;
+  padding-left: 10px;
+  font-size: 15px;
+}
+
+textarea {
+  outline: none;
+  color: #ffffff;
+  font-size: 15px;
+  padding-left: 10px;
+  max-width: 100%;
+  height: 90px;
+  background-color: #2375d3;
+  border: none;
+  border-radius: 8px;
+
+}
+
+@media (max-width: 768px) {
+  .wrapper {
+    width: 400px;
+  }
+}

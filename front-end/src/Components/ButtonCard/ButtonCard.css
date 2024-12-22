@@ -1,0 +1,31 @@
+.button-card > button {
+    display: flex;
+    color: #4F86C6;
+    font-weight: 600;
+    border: none;
+    height: 48px;
+    width: 180px;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    margin-left: 1.5rem;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.button-card > button:hover {
+    color: white;
+    background-color:  #0b3f7a;
+}
+
+@media (max-width: 768px) {
+
+    .button-card > button {
+        font-weight: 600;
+        font-size: 15px;
+        border: none;
+        height: 48px;
+        width: 120px;
+    }
+}

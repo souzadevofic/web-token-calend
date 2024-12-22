@@ -1,0 +1,35 @@
+.container {
+    margin-top:-14px;
+    max-width: 100%;
+    margin-bottom: 200px;
+}
+
+.container-forms {
+    background-color: #4F86C6;
+    margin-top: 40px;
+}
+
+.forms-conta {
+    color: #0e0d0d;
+}
+
+.btn-forms {
+    color: #fcfdff;
+    background-color: #25292c;
+    border: none;
+    height: 40px;
+    border-radius: 200px;
+}
+
+.btn-forms:hover {
+    background-color: #0b3f7a;
+}
+
+@media (max-width: 768px) {
+    .container {
+        margin-top:-14px;
+        width: 400px;
+       
+        
+    }
+}
